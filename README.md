@@ -3,6 +3,7 @@
 This project predicts the survival of Titanic passengers using the **Decision Tree algorithm** with a **pipeline** for preprocessing and model training.
 
 ## 📌 Features
+
 - Uses **DecisionTreeClassifier** from `sklearn`
 - Implements **Pipeline** for efficient preprocessing and training
 - Handles missing values, encodes categorical features, scales numerical features, and selects best features
@@ -10,6 +11,7 @@ This project predicts the survival of Titanic passengers using the **Decision Tr
 - Deploys model using **Render** for easy access via API
 
 ## 📂 Project Structure
+
 ```
 ├── data
 │   ├── train.csv  # Training dataset
@@ -23,6 +25,7 @@ This project predicts the survival of Titanic passengers using the **Decision Tr
 ```
 
 ## 🛠️ Installation & Setup
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/titanic-survival-prediction.git
@@ -38,8 +41,10 @@ This project predicts the survival of Titanic passengers using the **Decision Tr
    ```
 
 ## 🔍 Data Preprocessing
+
 The pipeline includes:
-- **Handling Missing Values**: 
+
+- **Handling Missing Values**:
   - Filling missing values for `Age` using median.
   - Filling missing values for `Embarked` using the most frequent value.
 - **Encoding Categorical Features**: One-hot encoding for `Sex` and `Embarked`.
@@ -48,7 +53,9 @@ The pipeline includes:
 - **Model Training**: Applying `DecisionTreeClassifier` with optimized parameters.
 
 ## 🚀 Model Training
+
 The pipeline is implemented using:
+
 ```python
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
@@ -85,6 +92,7 @@ model_pipeline = Pipeline([
 ```
 
 ## 🌐 Deployment with Render
+
 1. Install **Flask** to create a simple API:
    ```bash
    pip install flask
@@ -123,20 +131,29 @@ model_pipeline = Pipeline([
    - Connect repository to Render
    - Render automatically builds and deploys the application
 
+5. **Access the Deployed Model**:
+   The model is deployed at:
+   🔗 [Titanic Survival API](https://titanic-survival-prediction-mb5x.onrender.com/)
+
 ## 📊 Evaluation
+
 - **Accuracy Score**
 - **Confusion Matrix**
 - **Feature Importance Analysis**
 
 ## 🏆 Results
-After training the model on the Titanic dataset, we achieved an accuracy of **~63%** on the validation set. Further tuning can improve performance.
+
+After training the model on the Titanic dataset, we achieved an accuracy of **64%** on the validation set. Further tuning can improve performance.
 
 ## 🤝 Contributing
+
 Pull requests are welcome! If you'd like to improve this project, feel free to fork and submit PRs.
 
 ## 📜 License
+
 This project is open-source under the **MIT License**.
 
 ---
+
 Happy Coding! 🚀
 
